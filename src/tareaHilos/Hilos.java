@@ -64,17 +64,18 @@ public class Hilos extends JFrame implements ActionListener {
 		lblCaballoDos.setBounds(28, 103, 81, 16);
 		contentPane.add(lblCaballoDos);
 		
-		JProgressBar prgBarraUno = new JProgressBar();
+		prgBarraUno = new JProgressBar();
 		prgBarraUno.setBounds(121, 41, 268, 20);
 		contentPane.add(prgBarraUno);
 		
-		JProgressBar prgBarraDos = new JProgressBar();
+		prgBarraDos = new JProgressBar();
 		prgBarraDos.setBounds(121, 99, 268, 20);
 		contentPane.add(prgBarraDos);
 		
-		JButton btnCorrer = new JButton("Correr");
-		btnCorrer.setBounds(122, 150, 179, 43);
+		btnCorrer = new JButton("Correr");
 		btnCorrer.addActionListener(this);
+		btnCorrer.setBounds(122, 150, 179, 43);
+		
 		contentPane.add(btnCorrer);
 	}
 
@@ -88,6 +89,7 @@ public class Hilos extends JFrame implements ActionListener {
 			barra1.start();
 			barra2.start();
 		}
-		
 	}
+
+	
 }
